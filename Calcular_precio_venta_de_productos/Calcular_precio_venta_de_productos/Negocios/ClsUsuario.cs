@@ -10,7 +10,14 @@ namespace Calcular_precio_venta_de_productos.Negocios
     class ClsUsuario
     {
         Usuario usuario = new Usuario();
-        public string 
+        public string acceso(string nombre, int contraseña)
+        {if ((nombre == "Jefferson Romero") && (contraseña == 123))
+            {
+                return " a iniciado secion correctamente";
+            }
+            else
+                return "sus datos son incorrectos no es pocible iniciar sesion";
+        }
 
     }
 }

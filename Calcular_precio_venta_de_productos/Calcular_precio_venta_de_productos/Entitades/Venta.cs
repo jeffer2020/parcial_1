@@ -30,6 +30,16 @@ namespace Calcular_precio_venta_de_productos.Entitades
             this.Cantidad_del_producto = cantidad_del_producto;
         }
 
+        public Venta()
+        {
+        }
+
+        public override string ToString()
+        {
+                return "el_Identificador_deproducto: " + Identificador_deproducto + " el_Nombre_del_producto " + Nombre_del_producto + " la_Descripcion_del_producto " + Descripcion_del_producto + " el_Precio_de_lproducto " + Precio_de_lproducto + " le_Cantidad_del_producto " + Cantidad_del_producto;
+
+        }
+
         
     }
 }

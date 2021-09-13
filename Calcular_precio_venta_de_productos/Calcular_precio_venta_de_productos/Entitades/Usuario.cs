@@ -8,17 +8,16 @@ namespace Calcular_precio_venta_de_productos.Entitades
 {
     class Usuario
     {
-        private string Nombre;
-        private int Contraseña;
+        private string  nombre;
+        private int contraseña;
 
-        public string Nombre1 { get => Nombre; set => Nombre = value; }
-        public int Contraseña1 { get => Contraseña; set => Contraseña = value; }
-
+        public string Nombre { get => nombre; set => nombre = value; }
+        public int Contraseña { get => contraseña; set => contraseña = value; }
 
         public Usuario(string nombre, int contraseña)
         {
-            Nombre1 = nombre;
-            Contraseña1 = contraseña;
+            this.Nombre = nombre;
+            this.Contraseña = contraseña;
         }
 
         public Usuario()
@@ -27,7 +26,7 @@ namespace Calcular_precio_venta_de_productos.Entitades
 
         public override string ToString()
         {
-            return "el Nombre del usuario es " + Nombre + " la Contraseña del usuario es " + Contraseña;
+            return "el nombre del usuario es " + nombre + " la contraseña del usuario es " + contraseña;
         }
     }
 }
