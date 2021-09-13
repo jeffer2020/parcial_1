@@ -21,6 +21,13 @@ namespace Calcular_precio_venta_de_productos.Entitades
             Contraseña1 = contraseña;
         }
 
-       public Usuario() { }
+        public Usuario()
+        {
+        }
+
+        public override string ToString()
+        {
+            return "el Nombre del usuario es " + Nombre + " la Contraseña del usuario es " + Contraseña;
+        }
     }
 }
